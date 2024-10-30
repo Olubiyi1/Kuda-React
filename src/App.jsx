@@ -1,12 +1,13 @@
-import Header from "./Components/Header.jsx"
-import Homepage from "./pages/Homepage.Jsx";
+import Header from "./Components/Header.jsx";
+import Homepage from "./pages/Home.jsx"
 
 
 const App = () => {
   return ( 
     <div>
       <Header />
-      <Homepage />
+      <Homepage/>
+      
   
      
     </div>

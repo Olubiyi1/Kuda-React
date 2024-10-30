@@ -29,7 +29,6 @@ const SectionTwo = styled.div`
     gap: 40px;
     width:80%;
     margin: auto;
-    /* border: 1px solid; */
     flex-direction: column;
 `
 const TopCards = styled.div`
