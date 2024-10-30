@@ -34,8 +34,6 @@ const Header = () => {
                 <div id="flag">
                     <img src={Flag} alt="" />
                 </div>
-
-                {/* <img src="" alt="" /> */}
             </RightNav>
 
         </Navigation>
@@ -45,8 +43,8 @@ const Header = () => {
 export default Header;
 
 const Navigation= styled.div`
-    /* border: 1px solid; */
-    height: 70px;
+ 
+    height: 60px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -55,6 +53,7 @@ const Navigation= styled.div`
     font-size: 14px;
     color: #634488;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    width: 100%;
 `
 const LeftNav = styled.div`
 display: flex;
