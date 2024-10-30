@@ -1,5 +1,5 @@
 import Header from "./Components/Header.jsx"
-import Homepage from "./pages/Homepage.Jsx";
+import Homepage from "./pages/Homepage.jsx"
 
 
 const App = () => {
