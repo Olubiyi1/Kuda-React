@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Hero from "./Hero.Jsx";
+import Hero from "./HeroOne.jsx";
 import HeroTwo from "./HeroTwo";
 import HeroThree from "./HeroThree";
 
