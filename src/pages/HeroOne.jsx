@@ -55,6 +55,7 @@ gap:30px;
 #desc{
     font-size:20px;
     font-weight: 600;
+    line-height: 20px;
 }
 
 .buttons{
