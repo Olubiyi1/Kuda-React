@@ -2,6 +2,12 @@ import styled from "styled-components";
 import Hero from "./HeroOne.jsx";
 import HeroTwo from "./HeroTwo";
 import HeroThree from "./HeroThree";
+import HeroFour from "./HeroFour.jsx";
+import HeroFive from "./HeroFive.jsx";
+import HeroSix from "./HeroSix.jsx";
+import HeroSeven from "./HeroSeven.jsx";
+import HeroEight from "./HeroEight.jsx";
+import Testimonies from "./Testimonies.jsx";
 
 const Homepage = () => {
     return ( 
@@ -9,6 +15,12 @@ const Homepage = () => {
             <Hero/>
             <HeroTwo/>
             <HeroThree />
+            <HeroFour/>
+            <HeroFive/>
+            <HeroSix/>
+            <HeroSeven/>
+            <HeroEight/>
+            <Testimonies/>
         </Main>
      )
 };

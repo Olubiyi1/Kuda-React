@@ -25,7 +25,7 @@ export default HeroThree;
 
 const SectionThree = styled.div`
 display: flex;
-/* gap: 50px; */
+gap: 100px;
 width: 80%;
 margin: auto;
 justify-content: center;
@@ -57,17 +57,17 @@ margin-top: 50px;
     margin-top:8px;
 }
 img{
-    width: 550px;
+    width: 500px;
 }
 
 #heroThree{
-    font-size: 31.5px;
+    font-size:31.5px;
     color: RGB(64, 25, 109);
     font-weight: 900;
 }
 #paraThree{
     font-size:14px;
     font-weight: 400;
+    line-height: 20px;
 }
-
 `
