@@ -40,6 +40,7 @@ const Section = styled.div`
     justify-content: center;
     font-family: Mulish;
     margin-top: 50px;
+
 `
 const LeftHero = styled.div`
 width: 600px;    

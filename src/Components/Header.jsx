@@ -52,8 +52,12 @@ const Navigation= styled.div`
     font-weight: 700;
     font-size: 14px;
     color: #634488;
+    background-color: white;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
     width: 100%;
+    position: fixed;
+    top: 0px;
+    z-index:2;
 `
 const LeftNav = styled.div`
 display: flex;
