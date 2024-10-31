@@ -61,7 +61,7 @@ img{
 }
 
 #heroThree{
-    font-size: 26px;
+    font-size:31.5px;
     color: RGB(64, 25, 109);
     font-weight: 900;
 }
@@ -70,5 +70,4 @@ img{
     font-weight: 400;
     line-height: 20px;
 }
-
 `

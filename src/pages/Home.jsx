@@ -7,6 +7,7 @@ import HeroFive from "./HeroFive.jsx";
 import HeroSix from "./HeroSix.jsx";
 import HeroSeven from "./HeroSeven.jsx";
 import HeroEight from "./HeroEight.jsx";
+import Testimonies from "./Testimonies.jsx";
 
 const Homepage = () => {
     return ( 
@@ -19,6 +20,7 @@ const Homepage = () => {
             <HeroSix/>
             <HeroSeven/>
             <HeroEight/>
+            <Testimonies/>
         </Main>
      )
 };
