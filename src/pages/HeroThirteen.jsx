@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import ButtonProps from "../Components/ButtonProps";
+import Img from "../assets/images/Thirteen.png"
 
 const HeroThirteen = () => {
     return ( 
@@ -11,7 +12,7 @@ const HeroThirteen = () => {
             <ButtonProps Title="Join Kuda"/>
             </ThirteenHead>
             <ThirteenImg>
-                <img src="src\assets\images\Thirteen.png" alt="" />
+                <img src={Img} alt="" />
             </ThirteenImg>
         </SectionThirteen>
      );
