@@ -17,7 +17,7 @@ const Footer = () => {
                <FootProps>
                    <ContentButtonProps Image={<FaApple/>} Step="Download on the" AppName="App Store"/>
                    <ContentButtonProps Image={<IoLogoGooglePlaystore/>} Step="Get it on" AppName="Google Play"/>
-                   <ContentButtonProps Image={<BsGlobe/>} Step="Get it on" AppName="Google Play"/>
+                   <ContentButtonProps Image={<BsGlobe/>} Step="Get it on" AppName="Google Play" Style="StyleBlue"/>
                </FootProps>
 
                <FootHead>
@@ -88,7 +88,12 @@ const Foot = styled.div`
 const FootProps = styled.div`
 display:inline-flex;
 gap: 10px;
+
+.StyleBlue{
+    background-color: rgb(64,25,109);
+}
 `
+
 
 const FootHead = styled.div`
     font: 12.6px;

@@ -1,8 +1,8 @@
 import styled from "styled-components"
 
-const ContentButtonProps = ({Image,Step,AppName}) => {
+const ContentButtonProps = ({Image,Step,AppName,Style}) => {
     return ( 
-        <Button>
+        <Button className={`${Style}`}>
             <div id="img">{Image}</div>
             <div className="Content">
                 <p>{Step}</p>
