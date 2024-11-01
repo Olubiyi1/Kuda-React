@@ -14,6 +14,7 @@ import HeroEleven from "./HeroEleven.jsx";
 import HeroTwelve from "./HeroTwelve.jsx";
 import HeroThirteen from "./HeroThirteen.jsx";
 import HeroFourteen from "./HeroFourteen.jsx";
+import Footer from "../Components/Footer.jsx";
 
 const Homepage = () => {
     return ( 
@@ -33,6 +34,7 @@ const Homepage = () => {
             <HeroTwelve/>
             <HeroThirteen/>
             <HeroFourteen/>
+            <Footer/>
         </Main>
      )
 };

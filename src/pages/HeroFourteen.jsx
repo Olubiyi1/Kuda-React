@@ -57,6 +57,8 @@ export default HeroFourteen;
 const SectionFourteen = styled.div`
     border-top: 1px dashed lightgray;
     padding-top: 50px;
+    padding-bottom: 50px;
+
     
 `
 
