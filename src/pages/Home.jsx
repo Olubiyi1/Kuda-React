@@ -11,6 +11,8 @@ import Testimonies from "./Testimonies.jsx";
 import HeroNine from "./HeroNine.jsx"
 import HeroTen from "./HeroTen.jsx";
 import HeroEleven from "./HeroEleven.jsx";
+import HeroTwelve from "./HeroTwelve.jsx";
+import HeroThirteen from "./HeroThirteen.jsx";
 
 const Homepage = () => {
     return ( 
@@ -27,6 +29,8 @@ const Homepage = () => {
             <HeroNine/>
             <HeroTen/>
             <HeroEleven/>
+            <HeroTwelve/>
+            <HeroThirteen/>
         </Main>
      )
 };

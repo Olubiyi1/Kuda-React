@@ -34,7 +34,6 @@ font-weight: 900;
 padding-top: 50px;
 `
 const SectionTenImg = styled.image`
-/* border: 1px solid; */
 display: flex;
 height: 100px;
 align-items: center;

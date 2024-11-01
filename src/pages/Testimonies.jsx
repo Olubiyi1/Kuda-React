@@ -36,7 +36,7 @@ const Transitions = styled.div`
     background-color: #f9f9f9;
     margin: 50px 0px;
     animation-name: transition;
-    animation-duration: 30s;
+    animation-duration: 60s;
     animation-iteration-count: infinite;
     /* animation-timing-function: ease-in-out; */
    

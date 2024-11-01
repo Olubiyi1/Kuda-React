@@ -11,7 +11,7 @@ const HeroEleven = () => {
             <SectionElevenTable>
                     <tr>
                         <th></th>
-                        <th>Other Banks</th>
+                        <th id="title">Other Banks</th>
                         <th><img src="src\assets\images\LogoKuda.png" alt="" /></th>
                     </tr>
                     <tr>
@@ -63,10 +63,10 @@ export default HeroEleven;
 
 const SectionEleven = styled.div`
     /* border: 1px solid; */
-    width: 80%;
+    width: 70%;
     margin: auto;
     margin-top: 50px;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    
     background-color: white;
 `
 const SectionElevenHead = styled.div`
@@ -79,14 +79,13 @@ padding-top: 50px;
 
 `
 const SectionElevenTable = styled.table`
+box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     img{
         width: 100px;
-    
     }
     width: 100%;
     font-size: 14px;
     text-align:left;
-    /* margin-left: 100px; */
 
     th,td,tr{
         border-bottom:1px dashed lightgray;
@@ -103,5 +102,10 @@ const SectionElevenTable = styled.table`
     #checked{
         color: rgb(123,101,164);
         margin-right: 5px;
+    }
+    #title{
+        font-size: 17.5px;
+        color: RGB(64, 25, 109);
+        font-weight:900;
     }
 `
