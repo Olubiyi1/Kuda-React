@@ -13,6 +13,8 @@ import HeroTen from "./HeroTen.jsx";
 import HeroEleven from "./HeroEleven.jsx";
 import HeroTwelve from "./HeroTwelve.jsx";
 import HeroThirteen from "./HeroThirteen.jsx";
+import HeroFourteen from "./HeroFourteen.jsx";
+import Footer from "../Components/Footer.jsx";
 
 const Homepage = () => {
     return ( 
@@ -31,6 +33,8 @@ const Homepage = () => {
             <HeroEleven/>
             <HeroTwelve/>
             <HeroThirteen/>
+            <HeroFourteen/>
+            <Footer/>
         </Main>
      )
 };

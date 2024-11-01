@@ -21,7 +21,7 @@ export default HeroThirteen;
 
 const SectionThirteen = styled.div`
     display: flex;
-    width: 70%;
+    max-width: 70%;
     align-items: center;
     gap: 50px;
     justify-content: center;
