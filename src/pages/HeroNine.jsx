@@ -1,16 +1,23 @@
 import styled from "styled-components";
+import Tc from "../assets/images/tc.svg"
+import Image from "../assets/images/downloa.svg"
+import fintech from "../assets/images/fintech.svg"
+import download from "../assets/images/download.svg"
+import cnbc from "../assets/images/cnbc.svg"
+import euromoney from "../assets/images/euromoney.svg"
+
 
 
 
 const HeroNine = () => {
     return ( 
         <SectionNine>
-            <img src="src\assets\images\tc.svg" alt="" />
-            <img src="src\assets\images\downloa.svg" alt="" />
-            <img src="src\assets\images\fintech.svg" alt="" />
-            <img src="src\assets\images\download.svg" alt="" />
-            <img src="src\assets\images\cnbc.svg" alt="" />
-            <img src="src\assets\images\euromoney.svg" alt="" />
+            <img src={Tc} alt="" />
+            <img src={Image}alt="" />
+            <img src={fintech}alt="" />
+            <img src={download} alt="" />
+            <img src={cnbc} alt="" />
+            <img src={euromoney} alt="" />
         </SectionNine>
      );
 }

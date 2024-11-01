@@ -1,4 +1,9 @@
 import styled from "styled-components";
+import Valar from "../assets/images/Valar.svg"
+import entre from "../assets/images/entre.svg"
+import sbi from "../assets/images/sbi.svg"
+import target from "../assets/images/target.svg"
+import Visa from "../assets/images/Visa.svg"
 
 const HeroTen = () => {
     return ( 
@@ -7,11 +12,11 @@ const HeroTen = () => {
                 Our Partners
             </SectionTenHead>
             <SectionTenImg>
-                <img src="src\assets\images\Valar.svg" alt="" />
-                <img src="src\assets\images\entre.svg" alt="" />
-                <img src="src\assets\images\sbi.svg" alt="" />
-                <img src="src\assets\images\target.svg" alt="" />
-                <img src="src\assets\images\Visa.svg" alt="" />
+                <img src={Valar} alt="" />
+                <img src={entre} alt="" />
+                <img src={sbi} alt="" />
+                <img src={target} alt="" />
+                <img src={Visa}alt="" />
             </SectionTenImg>
         </SectionTen>
      );
