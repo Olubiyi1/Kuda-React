@@ -29,7 +29,6 @@ margin-top:50px;
 height: 200px;
 margin:auto;
 background-color: #fbfbfb;
-
 `
 const SectionTenHead = styled.div`
 text-align: center;
@@ -37,6 +36,10 @@ color: RGB(64, 25, 109);
 font-size: 31.5px;
 font-weight: 900;
 padding-top: 50px;
+@media (min-width: 350px){
+           margin-bottom:40px;
+}
+
 `
 const SectionTenImg = styled.image`
 display: flex;
@@ -44,4 +47,10 @@ height: 100px;
 align-items: center;
 justify-content: center;
 gap:50px;
+
+@media (min-width: 350px){
+            flex-wrap: wrap;
+            gap: 40px;
+}
+
 `

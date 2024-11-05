@@ -83,11 +83,19 @@ const Foot = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* align-items: flex-start; */
+
+    @media (min-width: 350px){
+         
+}
 `
 const FootProps = styled.div`
 display:inline-flex;
 gap: 10px;
+
+@media (min-width: 350px){
+            flex-wrap: wrap;
+            justify-content: center;
+}
 
 .StyleBlue{
     background-color: rgb(64,25,109);
@@ -108,6 +116,13 @@ justify-content: center;
 width: 80%;
 margin: auto;
 gap: 100px;
+
+@media (min-width: 350px){
+            flex-direction: column;
+            gap:20px;
+            width: 350px;
+            margin: 0px auto;
+}
     
 `
 const Location = styled.div`

@@ -27,6 +27,9 @@ margin: auto;
 justify-content: center;
 align-items: center;
 margin-top: 50px;
+@media (min-width: 350px){
+        flex-direction: column;
+    }
 `
 const SectionFiveHeader = styled.div`
      width: 600px;
@@ -34,10 +37,18 @@ const SectionFiveHeader = styled.div`
     flex-direction: column;
     gap: 30px;
 
+    @media (min-width: 350px){
+    width: 350px;
+    text-align: center;
+    margin-top:10px;
+}
+
     #FiveHeader{
         font-size: 31.5px;
     color: RGB(64, 25, 109);
     font-weight: 900;
+
+    
     }
 
     #para{
@@ -49,5 +60,10 @@ const SectionFiveHeader = styled.div`
 const SectionFiveImage = styled.div`
     img{
         width: 500px;
+
+        @media (min-width: 350px){
+        width: 350px;
+        margin-top: -15px;
+}
     }
 `

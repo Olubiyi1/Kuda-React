@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { IoMdArrowDropdown } from "react-icons/io";
 import ButtonProps from "./ButtonProps";
 import Flag from "../assets/images/flag.webp"
-
+import { RxHamburgerMenu } from "react-icons/rx";
 const Header = () => {
     return ( 
         <Navigation>
@@ -31,10 +31,17 @@ const Header = () => {
             <RightNav>
                 <p>Sign in</p>
                 <ButtonProps Title="Join Kuda"/>
-                <div id="flag">
+                {/* <div id="flag">
                     <img src={Flag} alt="" />
-                </div>
+                </div> */}
             </RightNav>
+            
+            <XtraNav>
+                <div id="flag">
+                        <img src={Flag} alt="" />
+                    </div>
+                <Hamburger><RxHamburgerMenu/></Hamburger>
+            </XtraNav>
 
         </Navigation>
      );
@@ -58,6 +65,8 @@ const Navigation= styled.div`
     position: fixed;
     top: 0px;
     z-index:2;
+
+    
 `
 const LeftNav = styled.div`
 display: flex;
@@ -66,6 +75,12 @@ height: 70px;
 justify-content: space-between;
 width: 500px;
 margin-left: 50px;
+
+@media (min-width:350px){
+    margin-left: 30px;
+}
+
+
 
 
 img{
@@ -76,6 +91,10 @@ img{
 .withIcons{
     display: flex;
     align-items: center;
+    @media (min-width:350px){
+    display: none;
+}
+    
 
     p{
         margin-right: 3px;
@@ -90,6 +109,17 @@ align-items: center;
 width: 250px;
 justify-content: space-between;
 
+@media (min-width:350px){
+    display: none;
+}
+`
+
+const XtraNav = styled.div`
+
+display: flex;
+align-items: center;
+height: 60px;
+justify-content: center;
 #flag{
     height: 30px;
     width: 30px;
@@ -98,9 +128,15 @@ justify-content: space-between;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-right: 15px;
 
     img{
         width:20px;
     }
 }
+    
+`
+const Hamburger = styled.image`
+    font-size: 25px;
+    margin-right: 30px;
 `

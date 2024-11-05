@@ -28,6 +28,10 @@ margin: auto;
 justify-content: center;
 align-items: center;
 margin-top: 50px;
+
+@media (min-width: 350px){
+        flex-direction: column;
+    }
 `
 const SectionSixHeader = styled.div`
      width: 600px;
@@ -35,10 +39,20 @@ const SectionSixHeader = styled.div`
     flex-direction: column;
     gap: 30px;
 
+    @media (min-width: 350px){
+    width: 350px;
+    text-align: center;
+    margin-top:20px;
+}
+
     #SixHeader{
         font-size: 31.5px;
     color: RGB(64, 25, 109);
     font-weight: 900;
+
+    @media (min-width: 350px){
+    font-size: 30px;
+}
     }
 
     #para{
@@ -50,5 +64,8 @@ const SectionSixHeader = styled.div`
 const SectionSixImage = styled.image`
     img{
         width: 400px;
+        @media (min-width: 350px){
+            margin-top: -60px;
+}
     }
 `

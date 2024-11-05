@@ -32,12 +32,22 @@ margin: auto;
 justify-content: center;
 align-items: center;
 margin-top: 50px;
+
+@media (min-width: 350px){
+        flex-direction: column-reverse;
+    }
 `
 const HeroFourHeader = styled.div`
     width: 600px;
     display: flex;
     flex-direction: column;
     gap: 30px;
+
+    @media (min-width: 350px){
+    width: 350px;
+    text-align: center;
+    margin-top:30px;
+}
 
     .header{
         font-size:31.5px;
@@ -53,7 +63,20 @@ const HeroFourHeader = styled.div`
 const HeroFourImage = styled.div`
     img{
         width: 500px;
+
+        @media (min-width: 350px){
+            width: 400px;
+            margin-top: -50px;
+            margin-left:-40px ;
+        }
     }
+
+    @media (min-width: 350px){
+        width: 350px;
+        margin-top: 80px;
+        margin: 0px auto;
+        /* margin-left: -50px; */
+}
 
 
 `
