@@ -12,14 +12,18 @@ const CardProps = ({Image,Texts}) => {
 export default CardProps;
 
 const Cards = styled.div`
-margin-top: 50px;
+margin-top: 10px;
 width: 350px;
 height: 130px;
 box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 
-@media (min-width: 350px){
-       margin-top: 20px;
+@media (max-width:700px){
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 90px;
     }
+
 
 img{
     width: 30px;
@@ -30,7 +34,7 @@ img,p{
 }
 
 p{
-    font-size: 13.65px;
+    font-size: 12px;
     font-weight: 900;
     color: RGB(64, 25, 109);
 }

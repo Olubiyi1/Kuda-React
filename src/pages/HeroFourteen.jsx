@@ -59,29 +59,35 @@ const SectionFourteen = styled.div`
     border-top: 1px dashed lightgray;
     padding-top: 50px;
     padding-bottom: 50px;
+    flex-wrap: wrap;
+    margin: 0px auto;
+    max-width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    
     img{
-    width: 70px;
-    margin-left: 30px;
+    width: 100px;
+    margin-left: 10px;
+    /* margin-bottom: -50px; */
 }
     
 `
 
 const SectionFourteenContent = styled.div`
 display: flex;
-justify-content: center;
-gap:70px;
-align-items: start;
-width: 80%;
-margin: auto;
+/* border: 1px solid; */
+width: 900px;
+justify-content: space-around;
+align-items: flex-start;
+font-family: Mulish;
+margin-top: 15px;
 
-@media (min-width: 350px){
-           display: grid;
-           grid-template-columns: 1fr 1fr;
-           margin-top: 20px;
+@media (max-width:500px){
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0px auto;
 }
-
-
-
 h5{
     font-size: 14px;
     font-weight: 700;

@@ -15,7 +15,7 @@ const HeroThree = () => {
             </div>
 
             
-                <img src={Image} alt="" />
+            <img src={Image} alt="" />
 
         </SectionThree>
      );
@@ -24,46 +24,58 @@ const HeroThree = () => {
 export default HeroThree;
 
 const SectionThree = styled.div`
-display: flex;
-gap: 100px;
-width: 80%;
-margin: auto;
-justify-content: center;
-align-items: center;
-margin-top: 50px;
-@media (min-width: 350px){
-        flex-direction: column;
+  display: flex;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin:auto;
+    justify-content: center;
+    align-items: center;
+    font-family: Mulish;
+    margin-top: 60px;
+
+    @media (max-width:700px){
+        flex-wrap: wrap;
+        justify-content:center;
+        
     }
+
+    @media (max-width: 500px){
+     margin-left: -20px;
+    }
+
 
 .SectionThreeLeft{
     width: 600px;
     display: flex;
     flex-direction: column;
     gap: 30px;
-    @media (min-width: 350px){
-    width: 350px;
-    text-align: center;
-    margin-top:0px;
+
+    @media (max-width:950px){
+    margin-left: 30px;
 }
+@media (max-width:810px){
+        width: 450px;
+        text-align: center;
+        
+    }
 }
 
 .SectionThreeFooter{
     display: flex;
     height: 30px;
     align-items: center;
-
-    
+    @media (max-width:950px){
+            margin: 0px auto;
+}
 
     a{
         font-size: 14px;
         font-weight: 700;
         color: RGB(64, 25, 109);
 
-        @media (min-width: 350px){
-            margin:0px auto ;
+        @media (max-width: 500px){
+        font-size:15px;   
         }
-
-        
     }
 }
     
@@ -71,28 +83,37 @@ margin-top: 50px;
     font-size:20px;
     text-align: center;
     margin-top:8px;
-
-    @media (min-width: 350px){
-        display: inline;
-    }
 }
 img{
     width: 500px;
 
-    @media (min-width: 350px){
-        width: 350px;
-        margin-top: -60px;
-}
+    @media (max-width: 950px){
+        width: 400px;
+    }
+
+    @media (max-width: 500px){
+    width:300px;   
+    margin-top: 20px;
+    }
 }
 
 #heroThree{
     font-size:31.5px;
     color: RGB(64, 25, 109);
     font-weight: 900;
+
+    @media (max-width:950px){
+    font-size: 30px;
+}
+
+@media (max-width: 500px){
+     font-size:25px;   
+    }
+
 }
 #paraThree{
     font-size:14px;
     font-weight: 400;
     line-height: 20px;
-}
-`
+
+}`

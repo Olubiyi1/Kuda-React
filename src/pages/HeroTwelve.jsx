@@ -26,10 +26,7 @@ const SectionTwelve = styled.div`
 margin-top: 70px;
 /* background-color: rgb(247,245,249); */
 margin-bottom: 100px;
-@media (min-width: 350px){
-            margin-top: 10px;
-            width: 350px;
-}
+
 
 `
 const TwelveHeader =styled.div`
@@ -38,17 +35,23 @@ const TwelveHeader =styled.div`
     font-weight: 900;
     text-align: center;
     padding: 50px;
+
+    @media (max-width:950px){
+    font-size: 30px;
+}
+
+@media (max-width: 500px){
+     font-size:25px;   
+    }
+ 
 `
 const PropsStyle = styled.div`
     display: flex;
-width: 70%;
+    flex-wrap: wrap;
+    max-width: 1000px;
 margin: auto;
 gap: 50px;
 justify-content: center;
 
-@media (min-width: 350px){
-            flex-wrap: wrap;
-            width: fit-content;
-}
 
 `
