@@ -17,6 +17,10 @@ width: 350px;
 height: 130px;
 box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 
+@media (min-width: 350px){
+       margin-top: 20px;
+    }
+
 img{
     width: 30px;
 }

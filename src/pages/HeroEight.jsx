@@ -28,12 +28,23 @@ margin: auto;
 justify-content: center;
 align-items: center;
 margin-top: 50px;
+
+@media (min-width: 350px){
+        flex-direction: column;
+        margin-top: 10px;
+    }
 `
 const SectionEightHeader = styled.div`
      width: 600px;
     display: flex;
     flex-direction: column;
     gap: 30px;
+
+    @media (min-width: 350px){
+    width: 350px;
+    text-align: center;
+    margin-top:50px;
+}
 
     #SixHeader{
         font-size: 31.5px;
@@ -50,5 +61,10 @@ const SectionEightHeader = styled.div`
 const SectionEightImage = styled.image`
     img{
         width: 450px;
+
+        @media (min-width: 350px){
+            margin-top: -60px;
+            width: 400px;
+}
     }
 `

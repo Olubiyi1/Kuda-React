@@ -34,8 +34,16 @@ gap: 100px;
 height: 150px;
 margin: auto;
 margin-top: 50px;
+@media (min-width: 350px){
+            flex-wrap: wrap;
+            margin:50px auto;
+            gap: 50px;
+}
 
 img{
     width: 90px;
+    @media (min-width: 350px){
+            width: 70px;
+}
 }
 `

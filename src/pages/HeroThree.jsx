@@ -31,12 +31,20 @@ margin: auto;
 justify-content: center;
 align-items: center;
 margin-top: 50px;
+@media (min-width: 350px){
+        flex-direction: column;
+    }
 
 .SectionThreeLeft{
     width: 600px;
     display: flex;
     flex-direction: column;
     gap: 30px;
+    @media (min-width: 350px){
+    width: 350px;
+    text-align: center;
+    margin-top:0px;
+}
 }
 
 .SectionThreeFooter{
@@ -44,10 +52,18 @@ margin-top: 50px;
     height: 30px;
     align-items: center;
 
+    
+
     a{
         font-size: 14px;
         font-weight: 700;
         color: RGB(64, 25, 109);
+
+        @media (min-width: 350px){
+            margin:0px auto ;
+        }
+
+        
     }
 }
     
@@ -55,9 +71,18 @@ margin-top: 50px;
     font-size:20px;
     text-align: center;
     margin-top:8px;
+
+    @media (min-width: 350px){
+        display: inline;
+    }
 }
 img{
     width: 500px;
+
+    @media (min-width: 350px){
+        width: 350px;
+        margin-top: -60px;
+}
 }
 
 #heroThree{

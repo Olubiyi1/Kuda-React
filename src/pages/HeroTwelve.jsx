@@ -26,6 +26,11 @@ const SectionTwelve = styled.div`
 margin-top: 70px;
 /* background-color: rgb(247,245,249); */
 margin-bottom: 100px;
+@media (min-width: 350px){
+            margin-top: 10px;
+            width: 350px;
+}
+
 `
 const TwelveHeader =styled.div`
     color: RGB(64, 25, 109);
@@ -40,4 +45,10 @@ width: 70%;
 margin: auto;
 gap: 50px;
 justify-content: center;
+
+@media (min-width: 350px){
+            flex-wrap: wrap;
+            width: fit-content;
+}
+
 `

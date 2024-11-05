@@ -29,6 +29,10 @@ export default Testimonies;
 
 const TSection = styled.div`
  margin-top: 50px;
+
+ @media (min-width: 350px){
+            border: 1px solid;
+}
 `
 const Transitions = styled.div`
      display: flex;
@@ -39,6 +43,8 @@ const Transitions = styled.div`
     animation-duration: 60s;
     animation-iteration-count: infinite;
     /* animation-timing-function: ease-in-out; */
+
+
    
 
     @keyframes transition{

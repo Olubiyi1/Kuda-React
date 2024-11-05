@@ -27,6 +27,10 @@ margin: auto;
 justify-content: center;
 align-items: center;
 margin-top: 50px;
+
+@media (min-width: 350px){
+        flex-direction: column;
+    }
 `
 const SectionSevenHeader = styled.div`
      width: 600px;
@@ -34,10 +38,20 @@ const SectionSevenHeader = styled.div`
     flex-direction: column;
     gap: 30px;
 
+    @media (min-width: 350px){
+    width: 350px;
+    text-align: center;
+    margin-top:10px;
+}
+
     #SevenHeader{
         font-size: 31.5px;
     color: RGB(64, 25, 109);
     font-weight: 900;
+
+    @media (min-width: 350px){
+    font-size: 30px;
+}
     }
 
     #para{
@@ -49,5 +63,15 @@ const SectionSevenHeader = styled.div`
 const SectionSevenImage = styled.image`
     img{
         width: 500px;
+        @media (min-width: 350px){
+        /* margin-top: -15px; */
+        /* margin:0px auto */
+        margin-top: -60px;
+        width: 400px;
+        /* margin-left: -70px; */
+
+}
     }
+
+
 `

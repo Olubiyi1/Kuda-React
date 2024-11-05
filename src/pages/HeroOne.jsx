@@ -41,6 +41,9 @@ const Section = styled.div`
     font-family: Mulish;
     margin-top: 50px;
 
+    @media (min-width: 350px){
+        flex-direction: column;
+    }
 `
 const LeftHero = styled.div`
 width: 600px;    
@@ -48,10 +51,19 @@ display: flex;
 flex-direction: column;
 gap:30px;
 
+@media (min-width: 350px){
+    width: 350px;
+    text-align: center;
+    margin-top:50px;
+}
+
 #header{
     font-size: 40px;
     font-weight: 900;
     color: RGB(64, 25, 109);
+    @media (min-width: 350px){
+    font-size: 30px;
+}
 }
 #desc{
     font-size:20px;
@@ -62,6 +74,10 @@ gap:30px;
 .buttons{
     display: flex;
     gap: 10px;
+    @media (min-width: 350px){
+        margin: 0px auto;
+    
+}
 }
 
 .HeroFooter{
@@ -70,6 +86,12 @@ gap:30px;
     font-weight: 700;
     font-size: 14px;
     align-items: center;
+
+    @media (min-width: 350px){
+    font-size: 10px;
+    margin: 0px auto;
+    margin-top: -10px;
+}
 }
 
 #cbn{
@@ -95,6 +117,11 @@ gap:30px;
 const RightHero = styled.div`
     img{
     width: 550px;
+
+    @media (min-width: 350px){
+        width: 350px;
+        margin-top: -15px;
+}
 }
 
 

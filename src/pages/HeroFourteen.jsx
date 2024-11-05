@@ -3,8 +3,9 @@ import styled from "styled-components";
 const HeroFourteen = () => {
     return ( 
         <SectionFourteen>
+             <img src="src/assets/images/LogoKuda.png" alt="" />
             <SectionFourteenContent>
-                <img src="src/assets/images/LogoKuda.png" alt="" />
+               
                 <Personal>
                     <h5>Personal</h5>
                     <p>Discover Personal</p>
@@ -58,7 +59,10 @@ const SectionFourteen = styled.div`
     border-top: 1px dashed lightgray;
     padding-top: 50px;
     padding-bottom: 50px;
-
+    img{
+    width: 70px;
+    margin-left: 30px;
+}
     
 `
 
@@ -70,10 +74,13 @@ align-items: start;
 width: 80%;
 margin: auto;
 
-img{
-    width: 70px;
-    margin-top: -10px;
+@media (min-width: 350px){
+           display: grid;
+           grid-template-columns: 1fr 1fr;
+           margin-top: 20px;
 }
+
+
 
 h5{
     font-size: 14px;

@@ -66,8 +66,14 @@ const SectionEleven = styled.div`
     width: 70%;
     margin: auto;
     margin-top: 50px;
-    
     background-color: white;
+    @media (min-width: 350px){
+            margin-top: 130px;
+            width: 350px;
+}
+
+
+    
 `
 const SectionElevenHead = styled.div`
     text-align: center;
@@ -76,6 +82,12 @@ font-size: 31.5px;
 font-weight: 900;
 margin-bottom: 50px;
 padding-top: 50px;
+
+@media (min-width: 350px){
+        font-size: 25px;
+
+}
+
 
 `
 const SectionElevenTable = styled.table`
