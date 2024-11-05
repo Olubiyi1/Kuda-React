@@ -28,22 +28,16 @@ const SectionNine = styled.div`
 
 
 display: flex;
+flex-wrap: wrap;
 align-items: center;
 justify-content: center;
-gap: 100px;
+gap: 40px;
 height: 150px;
 margin: auto;
-margin-top: 50px;
-@media (min-width: 350px){
-            flex-wrap: wrap;
-            margin:50px auto;
-            gap: 50px;
-}
+margin-top: 200px;
+margin-bottom: 10px;
 
 img{
-    width: 90px;
-    @media (min-width: 350px){
-            width: 70px;
-}
+    width: 70px;
 }
 `

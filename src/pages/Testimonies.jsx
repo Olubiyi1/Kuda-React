@@ -29,10 +29,6 @@ export default Testimonies;
 
 const TSection = styled.div`
  margin-top: 50px;
-
- @media (min-width: 350px){
-            border: 1px solid;
-}
 `
 const Transitions = styled.div`
      display: flex;

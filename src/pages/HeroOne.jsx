@@ -40,10 +40,16 @@ const Section = styled.div`
     align-items: center;
     font-family: Mulish;
     margin-top: 100px;
-  
 
-  
-    
+    @media (max-width:700px){
+        flex-wrap: wrap;
+        justify-content:center;
+
+    }
+
+    @media (max-width: 500px){
+     margin-left: -20px;
+    }
    
 `
 const LeftHero = styled.div`
@@ -52,12 +58,16 @@ display: flex;
 flex-direction: column;
 gap:30px;
 
+
 @media (max-width:950px){
     margin-left: 30px;
 }
-
-
-
+@media (max-width:810px){
+        width: 450px;
+        text-align: center;
+        
+    }
+ 
 #header{
     font-size: 40px;
     font-weight: 900;
@@ -66,17 +76,28 @@ gap:30px;
     @media (max-width:950px){
     font-size: 30px;
 }
+
+@media (max-width: 500px){
+     font-size:25px;   
+    }
  
 }
 #desc{
     font-size:20px;
     font-weight: 600;
     line-height: 20px;
+
+    @media (max-width: 500px){
+     font-size:16px;   
+    }
 }
 
 .buttons{
     display: flex;
     gap: 10px;
+    @media (max-width:810px){
+        justify-content: center;
+    }
  
 }
 
@@ -86,6 +107,12 @@ gap:30px;
     font-weight: 700;
     font-size: 14px;
     align-items: center;
+
+    @media (max-width: 500px){
+     font-size:11px;   
+     margin-top: -10px;
+     justify-content: center;
+    }
 }
 
 #cbn{
@@ -114,6 +141,11 @@ const RightHero = styled.div`
 
     @media (max-width: 950px){
         width: 400px;
+    }
+
+    @media (max-width: 500px){
+    width:300px;   
+    margin-top: 20px;
     }
 }
 

@@ -36,21 +36,17 @@ color: RGB(64, 25, 109);
 font-size: 31.5px;
 font-weight: 900;
 padding-top: 50px;
-@media (min-width: 350px){
-           margin-bottom:40px;
-}
-
+margin-bottom: 50px;
 `
 const SectionTenImg = styled.image`
 display: flex;
+flex-wrap: wrap;
 height: 100px;
 align-items: center;
 justify-content: center;
-gap:50px;
+gap:40px;
 
-@media (min-width: 350px){
-            flex-wrap: wrap;
-            gap: 40px;
+img{
+    width: 70px;
 }
-
 `

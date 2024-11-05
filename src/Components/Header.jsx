@@ -58,7 +58,8 @@ const Navigation= styled.div`
     position: fixed;
     top: 0px;
     z-index:2;
-    /* max-width: 1440px; */
+
+
 `
 const LeftNav = styled.div`
 display: flex;
@@ -133,8 +134,6 @@ const Hamburger = styled.image`
 const Buttons = styled.div`
     display: flex;
     align-items: center;
-    /* margin-left: 100px; */
-    /* border: 1px solid; */
     justify-content: space-between;
     width: 200px;
     

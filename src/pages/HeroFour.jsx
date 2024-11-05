@@ -6,7 +6,7 @@ const HeroFour = () => {
         <SectionFour>
 
             
-<HeroFourImage>
+            <HeroFourImage   HeroFourImage>
                 <img src={Image} alt="" />
             </HeroFourImage>
             <HeroFourHeader>
@@ -25,17 +25,30 @@ const HeroFour = () => {
 export default HeroFour;
 
 const SectionFour = styled.div`
-    display: flex;
-    gap: 100px;
-width: 80%;
-margin: auto;
-justify-content: center;
-align-items: center;
-margin-top: 50px;
+   display: flex;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin:auto;
+    align-items: center;
+    font-family: Mulish;
+    margin-top: 100px;
 
-@media (min-width: 350px){
+    @media (max-width:700px){
         flex-direction: column-reverse;
+        justify-content:center;
+        margin-top: 40px;
+        align-items: center;
+       
+
     }
+
+    @media (max-width: 500px){
+     margin-left: -20px;
+
+    }
+   
+
+    
 `
 const HeroFourHeader = styled.div`
     width: 600px;
@@ -43,40 +56,49 @@ const HeroFourHeader = styled.div`
     flex-direction: column;
     gap: 30px;
 
-    @media (min-width: 350px){
-    width: 350px;
-    text-align: center;
-    margin-top:30px;
+    @media (max-width:950px){
+    margin-left: 30px;
 }
-
+@media (max-width:810px){
+        width: 450px;
+        text-align: center;
+        
+    }
     .header{
         font-size:31.5px;
     color: RGB(64, 25, 109);
     font-weight: 900;
+
+    @media (max-width:950px){
+    font-size: 30px;
+}
+
+@media (max-width: 500px){
+     font-size:25px;   
+    }
     }
     #header{
         font-size:14px;
     font-weight: 400;
     line-height: 20px;
+
+    @media (max-width: 500px){
+     font-size:13px;   
+    }
     }
 `
 const HeroFourImage = styled.div`
     img{
         width: 500px;
-
-        @media (min-width: 350px){
-            width: 400px;
-            margin-top: -50px;
-            margin-left:-40px ;
-        }
+        
+    @media (max-width: 950px){
+        width: 400px;
     }
 
-    @media (min-width: 350px){
-        width: 350px;
-        margin-top: 80px;
-        margin: 0px auto;
-        /* margin-left: -50px; */
-}
-
+    @media (max-width: 500px){
+    width:300px;   
+    margin-top: 20px;
+    }
+    }
 
 `

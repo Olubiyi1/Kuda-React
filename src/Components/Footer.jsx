@@ -77,25 +77,17 @@ const Footer = () => {
 export default Footer;
 
 const Foot = styled.div`
-    width: 80%;
-    /* border: 1px solid; */
+    max-width:1000px;
     margin: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
 
-    @media (min-width: 350px){
-         
-}
 `
 const FootProps = styled.div`
 display:inline-flex;
 gap: 10px;
 
-@media (min-width: 350px){
-            flex-wrap: wrap;
-            justify-content: center;
-}
 
 .StyleBlue{
     background-color: rgb(64,25,109);
@@ -112,25 +104,28 @@ const FootHead = styled.div`
 `
 const Locations = styled.div`
 display: flex;
-justify-content: center;
-width: 80%;
+justify-content: space-around;
+@media (max-width:950px){
+    flex-direction: column;
+    margin-left:10px;
+    gap: 0px;
+
+}
+
 margin: auto;
 gap: 100px;
 
-@media (min-width: 350px){
-            flex-direction: column;
-            gap:20px;
-            width: 350px;
-            margin: 0px auto;
-}
-    
 `
 const Location = styled.div`
     h5{
         font-size: 14px;
         font-weight: 700;
       color: rgb(77,41,119);
-      padding-bottom: 20px;
+      margin-bottom:0px;
+
+      @media (max-width:950px){
+        line-height: 50px;
+      }
     }
     p{
         font-size: 12.25px;
@@ -151,7 +146,7 @@ const Icons = styled.div`
     gap: 10px;
 `
 const Icon = styled.div`
-    border: 1px solid rgb(77,41,119);
+
     width: 30px;
     height: 30px;
     display: flex;
@@ -166,7 +161,6 @@ const Copyright = styled.div`
     flex-direction: column;
     justify-content:center;
     gap: 20px;
-    /* width: 60%; */
     margin: auto;
     font-size: 11px;
     font-weight: 400;

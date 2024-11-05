@@ -20,16 +20,26 @@ const HeroFive = () => {
 export default HeroFive;
 
 const SectionFive = styled.div`
-        display: flex;
-        gap: 100px;
-        width: 80%;
-margin: auto;
-justify-content: center;
-align-items: center;
-margin-top: 50px;
-@media (min-width: 350px){
-        flex-direction: column;
+    
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin:auto;
+    align-items: center;
+    font-family: Mulish;
+    margin-top: 100px;
+
+    @media (max-width:700px){
+        flex-wrap: wrap;
+        justify-content:center;
+        margin-top: 40px;
+
     }
+
+    @media (max-width: 500px){
+     margin-left: -20px;
+    }
+
 `
 const SectionFiveHeader = styled.div`
      width: 600px;
@@ -37,18 +47,28 @@ const SectionFiveHeader = styled.div`
     flex-direction: column;
     gap: 30px;
 
-    @media (min-width: 350px){
-    width: 350px;
-    text-align: center;
-    margin-top:10px;
+
+    @media (max-width:950px){
+    margin-left: 30px;;
 }
+@media (max-width:810px){
+        width: 450px;
+        text-align: center;
+        
+    }
 
     #FiveHeader{
         font-size: 31.5px;
     color: RGB(64, 25, 109);
     font-weight: 900;
 
-    
+    @media (max-width:950px){
+    font-size: 28px;
+}
+
+@media (max-width: 500px){
+     font-size:25px;   
+    }
     }
 
     #para{
@@ -61,9 +81,13 @@ const SectionFiveImage = styled.div`
     img{
         width: 500px;
 
-        @media (min-width: 350px){
-        width: 350px;
-        margin-top: -15px;
-}
+        @media (max-width: 950px){
+        width: 400px;
+    }
+
+    @media (max-width: 500px){
+    width:300px;   
+    margin-top: 20px;
+    }
     }
 `

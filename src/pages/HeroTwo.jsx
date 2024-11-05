@@ -26,39 +26,33 @@ export default HeroTwo;
 
 const SectionTwo = styled.div`
     display: flex;
-    gap: 40px;
-    width:80%;
+    /* width:80%; */
+    max-width: 1000px;
     margin: auto;
     flex-direction: column;
 `
 const TopCards = styled.div`
 display:flex;
 justify-content: center;
-gap: 30px;
-margin-bottom: -50px;
 
-@media (min-width: 350px){
-        flex-direction: column;
-        width: 350px;
-        gap: 0px;
-        margin: 0px auto;
-        margin-left: -15px;
-        padding: 0px;
+
+@media (max-width:700px){
+        flex-wrap: wrap;
+        justify-content:center;
+        align-items: center;
     }
+
 `
 const BottomCards = styled.div`
 display:flex;
 justify-content: center;
-gap: 30px;
 margin-bottom: 30px;
 
-@media (min-width: 350px){
-        flex-direction: column;
-        width: 350px;
-        gap: 0px;
-        margin: -30px auto 30px;
-        margin-left: -15px;
-        padding: 0px;
-        
+@media (max-width:700px){
+        flex-wrap: wrap;
+        justify-content:center;
+        align-items: center;
+        margin-top: 10px;
+
     }
 `

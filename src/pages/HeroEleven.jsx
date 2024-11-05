@@ -63,14 +63,14 @@ export default HeroEleven;
 
 const SectionEleven = styled.div`
     /* border: 1px solid; */
-    width: 70%;
+    /* width: 70%; */
+    /* border: 1px solid; */
+    max-width: 1000px;
     margin: auto;
     margin-top: 50px;
     background-color: white;
-    @media (min-width: 350px){
-            margin-top: 130px;
-            width: 350px;
-}
+    margin-top: 50px;
+
 
 
     
@@ -83,11 +83,13 @@ font-weight: 900;
 margin-bottom: 50px;
 padding-top: 50px;
 
-@media (min-width: 350px){
-        font-size: 25px;
-
+@media (max-width:950px){
+    font-size: 30px;
 }
 
+@media (max-width: 500px){
+     font-size:25px;   
+    }
 
 `
 const SectionElevenTable = styled.table`
