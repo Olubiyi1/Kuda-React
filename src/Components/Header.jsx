@@ -29,20 +29,13 @@ const Header = () => {
             </LeftNav>
 
             <RightNav>
-                <p>Sign in</p>
-                <ButtonProps Title="Join Kuda"/>
-                {/* <div id="flag">
-                    <img src={Flag} alt="" />
-                </div> */}
-            </RightNav>
-            
-            <XtraNav>
-                <div id="flag">
-                        <img src={Flag} alt="" />
-                    </div>
+                <Buttons>
+                    <p>Sign in</p>
+                    <ButtonProps Title="Join Kuda"/>
+                </Buttons>
+                <img src={Flag} alt=""  id="flag"/>
                 <Hamburger><RxHamburgerMenu/></Hamburger>
-            </XtraNav>
-
+            </RightNav>
         </Navigation>
      );
 }
@@ -65,8 +58,7 @@ const Navigation= styled.div`
     position: fixed;
     top: 0px;
     z-index:2;
-
-    
+    /* max-width: 1440px; */
 `
 const LeftNav = styled.div`
 display: flex;
@@ -74,28 +66,23 @@ align-items: center;
 height: 70px;
 justify-content: space-between;
 width: 500px;
-margin-left: 50px;
-
-@media (min-width:350px){
-    margin-left: 30px;
-}
-
-
-
+margin-left: 20px;
+ 
 
 img{
     width: 70px;
-    margin-right: 30px;
+    /* margin-right: 30px; */
 }
 
 .withIcons{
     display: flex;
     align-items: center;
-    @media (min-width:350px){
-    display: none;
-}
-    
 
+      
+    @media (max-width:550px){
+        display: none;
+    }
+ 
     p{
         margin-right: 3px;
     }
@@ -103,23 +90,20 @@ img{
 }
 `
 const RightNav = styled.div`
-margin-right: 50px;
+/* margin-right: 200px; */
 display: flex;
 align-items: center;
-width: 250px;
+width: 300px;
 justify-content: space-between;
+/* border: 1px solid; */
 
-@media (min-width:350px){
-    display: none;
-}
-`
+  
+@media (max-width:750px){
+        /* border: 1px solid; */
+        width: 100px;
+        margin-right: 20px;
+    }
 
-const XtraNav = styled.div`
-
-display: flex;
-align-items: center;
-height: 60px;
-justify-content: center;
 #flag{
     height: 30px;
     width: 30px;
@@ -134,9 +118,27 @@ justify-content: center;
         width:20px;
     }
 }
-    
+
 `
 const Hamburger = styled.image`
     font-size: 25px;
-    margin-right: 30px;
+    margin-right: 20px;
+    display: none;
+      
+    @media (max-width:750px){
+        display: contents;
+    }
+
+`
+const Buttons = styled.div`
+    display: flex;
+    align-items: center;
+    /* margin-left: 100px; */
+    /* border: 1px solid; */
+    justify-content: space-between;
+    width: 200px;
+    
+    @media (max-width:750px){
+        display: none;
+    }
 `
